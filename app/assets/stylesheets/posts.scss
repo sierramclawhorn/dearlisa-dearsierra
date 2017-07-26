@@ -27,28 +27,6 @@
 	width: 45%;
 }
 
-.socialMedia {
-	text-align: center;
-}
-
-.instaLink a:link {
-	font-family: "courier new";
-	text-decoration: none;
-	color: black;
-	letter-spacing: .1em;
-	font-weight: bold;
-	font-variant: small-caps;
-	font-size: 1.2em;
-}
-
-.instaLink:hover {
-	color: pink;
-}
-
-.instaLink a:visited {
-	color: pink;
-}
-
 .italic {
 	font-style: italic;
 }
@@ -183,4 +161,18 @@ img {
 	float: right;
 	width: 46%;
 	margin-left: 4%;
+}
+
+
+
+
+//mobile media queries
+@media all and (max-width: 725px) {
+	.floatedAbout {
+		float: none;
+		width: 96%;
+	}
+	.aboutImg {
+		width: 100%;
+	}
 }
