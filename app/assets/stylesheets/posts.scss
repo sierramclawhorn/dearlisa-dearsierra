@@ -1,0 +1,186 @@
+// nav modals
+.nav {
+	position: fixed;
+	top: 0px;
+	right: 1vw;
+}
+
+#navBtn {
+	color: black;
+}
+
+#navBtn:hover {
+	color: pink;
+	cursor: pointer;
+}
+
+.aboutImg {
+	width: 50%;
+}
+
+.aboutContainer {
+	width: 100%;
+}
+
+.floatedAbout {
+	float: right;
+	width: 45%;
+}
+
+.socialMedia {
+	text-align: center;
+}
+
+.instaLink a:link {
+	font-family: "courier new";
+	text-decoration: none;
+	color: black;
+	letter-spacing: .1em;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 1.2em;
+}
+
+.instaLink:hover {
+	color: pink;
+}
+
+.instaLink a:visited {
+	color: pink;
+}
+
+.italic {
+	font-style: italic;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background: rgba(54, 25, 25, .5);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    overflow-y: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+// -------------
+
+
+
+
+
+
+
+body {
+	padding: 6%;
+	font-family: "PT Serif",serif;
+	letter-spacing: 0.5px;
+	line-height: 1.8em;
+	color: #222222;
+	-webkit-font-smoothing: antialiased;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.banner {
+	margin-bottom: 14%;
+}
+
+.bannerImg {
+	width: 98vw;
+	margin: 0;
+	position: absolute;
+	top: -4px;
+	left: 0;
+}
+
+.posts {
+	width: 96%;
+	margin: auto;
+}
+
+.titleTxt {
+	font-family: "ostrich_sansblack",Helvetica Neue,Helvetica,sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.4;
+	text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.titleTxt a {
+	text-decoration: none;
+	color: #222222;
+	cursor: pointer;
+}
+
+.dateTxt {
+	font-family: "Montserrat",Helvetica Neue,Helvetica,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.625rem;
+  color: #333;
+  line-height: 1;
+}
+
+.bodyTxt {
+	font-family: "PT Serif",serif;
+	font-size: 13px;
+	line-height: 1.8em;
+	letter-spacing: 0.5px;
+	font-weight: normal;
+}
+
+.authorTxt {
+	text-align: right;
+	font-size: 10px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+//post columns 
+.posts .left {
+	float: left;
+	width: 46%;
+	margin-right: 4%;
+}
+
+.posts .right {
+	float: right;
+	width: 46%;
+	margin-left: 4%;
+}

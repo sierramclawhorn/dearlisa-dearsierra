@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dear Lisa, Dear Sierra</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<div class='banner'>
+  		<a href='/'><%= image_tag 'icon.png', class: 'bannerImg' %></a>		
+  	</div>
+
+
+    <div class='nav'>
+      <button id="navBtn">about</button>
+    </div>
+  
+    <div id="navModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <%= render partial: 'posts/about', layout: false %>
+      </div>
+    </div>
+
+
+    <%= yield %>
+  </body>
+</html>
