@@ -152,12 +152,16 @@ img {
 
 //post columns 
 .posts .left {
+	max-height: 60vh;
+	overflow: scroll;
 	float: left;
 	width: 46%;
 	margin-right: 4%;
 }
 
 .posts .right {
+	max-height: 60vh;
+	overflow: scroll;
 	float: right;
 	width: 46%;
 	margin-left: 4%;
@@ -174,5 +178,14 @@ img {
 	}
 	.aboutImg {
 		width: 100%;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.posts .left {
+		max-height: 70vh;
+	}
+	.posts .right {
+		max-height: 70vh;
 	}
 }

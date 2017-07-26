@@ -1,4 +1,4 @@
-<% if current_user!= nil && ( current_user.username == 'sierramclawhorn' || current_user.username == 'kianaseymour' ) %>
+<% if current_user!= nil && ( current_user.username == 'sierramclawhorn' || current_user.username == 'lisadevon' ) %>
 	<%= link_to 'New Post', new_post_path %>
   <br><br>
 <% end %>
@@ -23,8 +23,8 @@
 		<% end %>
 	</div>
 
-	<div class='right kiana'>
-		<% @kianas.reverse_each do |post| %>
+	<div class='right lisa'>
+		<% @lisas.reverse_each do |post| %>
 			<div class='titleTxt'>
 				<%= link_to post.title, post_path(post.id) %>
 			</div>
@@ -35,7 +35,7 @@
 				<%= raw post.body %>
 			</div>
 			<div class='authorTxt'>
-				~ kiana
+				~ lisa
 			</div>
 			<br><br>
 		<% end %>
